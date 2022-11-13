@@ -9,8 +9,8 @@ public class tictactoe {
 		int [][] casilla = new int [3][3]; // TABLERO
 		int fila, columna;
 		
-		int contador = 0; // TURNO JUGADOR
-		boolean fin = false; // FIN
+		int contador = 0;
+		boolean fin = false;
 		
 		System.out.println("◝(ᵔᵕᵔ)◜ ¡TIC TAC TOE! ◝(ᵔᵕᵔ)◜\n");
 		
@@ -47,11 +47,9 @@ public class tictactoe {
 			(casilla[0][0] == jug && casilla[1][1] == jug && casilla[2][2] == jug) ||
 			(casilla[0][2] == jug && casilla[1][1] == jug && casilla[2][0] == jug)
 			) {
-				System.out.println("El jugador " + jug + " ha ganado");
-				fin = true;
-			} else if(contador == 8) {
-				System.out.println("Empate!");
-				fin = true;
+				System.out.println("El jugador " + jug + " ha ganado");fin = true;
+			}else if(contador == 8) {
+				System.out.println("Empate!");fin = true;
 			}
 
 			contador++;
