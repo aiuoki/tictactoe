@@ -15,9 +15,7 @@ public class tictactoe {
 		System.out.println("◝(ᵔᵕᵔ)◜ ¡TIC TAC TOE! ◝(ᵔᵕᵔ)◜\n");
 		
 		do {
-			
 			System.out.println("Turno del jugador " + ((contador % 2) + 1) + ".");
-			
 			do {
 				do {
 					System.out.println("Dime la fila (del 1 al 3):");
@@ -51,7 +49,7 @@ public class tictactoe {
 			) {
 				System.out.println("El jugador " + jug + " ha ganado");
 				fin = true;
-			}else if(contador == 8) {
+			} else if(contador == 8) {
 				System.out.println("Empate!");
 				fin = true;
 			}
