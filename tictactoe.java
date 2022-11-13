@@ -57,7 +57,6 @@ public class tictactoe {
 		}while(fin != true);
 		
 		System.out.println("\nFIN DEL PROGRAMA! ◝(ᵔᵕᵔ)◜");
-		
 		teclado.close();
 	}
 }
