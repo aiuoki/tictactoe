@@ -47,15 +47,15 @@ public class ia {
 				
 				do{
 					
-					fila = (int) (Math.random()*3); // GENERA UNA FILA RANDOM
+					fila = (int) (Math.random()*3+1); // GENERA UNA FILA RANDOM
 					
-					columna = (int) (Math.random()*3); // GENERA UNA COLUMNA RANDOM
+					columna = (int) (Math.random()*3+1); // GENERA UNA COLUMNA RANDOM
 					
-				}while(casilla[fila][columna] != 0); // MIENTRAS LA CASILLA NO ESTE OCUPADA
+				}while(casilla[fila-1][columna-1] != 0); // MIENTRAS LA CASILLA NO ESTE OCUPADA
 				
 				System.out.println("Fila: " + fila + "\nColumna: " + columna);
 				
-				casilla[fila][columna] = 2;
+				casilla[fila-1][columna-1] = 2;
 				
 			}
 			
@@ -78,7 +78,9 @@ public class ia {
 			(casilla[0][0] == jug && casilla[1][1] == jug && casilla[2][2] == jug) ||
 			(casilla[0][2] == jug && casilla[1][1] == jug && casilla[2][0] == jug)
 			) {
-				System.out.println("El jugador " + jug + " ha ganado");fin = true;
+				if(contador % 2 == 0) System.out.println("El jugador ha ganado.");
+				if(contador % 2 == 1) System.out.println("La IA ha ganado.");
+				fin = true;
 			}else if(contador == 8) {
 				System.out.println("Empate!");fin = true;
 			}
@@ -87,7 +89,7 @@ public class ia {
 			
 		}while(fin == false);
 		
-		System.out.println("FIN DEL JUEGO");
+		System.out.println("\nFIN DEL JUEGO");
 		
 		teclado.close();
 	}
