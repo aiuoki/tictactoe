@@ -1,4 +1,4 @@
 # tictactoe JAVA
-ia.java: Tic-Tac-Toe Jugador vs IA
+ia.java: tic tac toe Jugador vs IA
 
-tictactoe.java: Tic-Tac-Toe 2 Jugadores
+tictactoe.java: tic tac toe 2 Jugadores
