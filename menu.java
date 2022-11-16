@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class tttoe {
+public class menu {
 
 	public static void main(String[] args) {
 		
@@ -18,7 +18,6 @@ public class tttoe {
 				menu = teclado.nextInt();
 				if(menu != 1 && menu != 2 && menu != 9) System.out.println("\nSeleccione una opcion correcta!!");
 			}while(menu != 1 && menu != 2 && menu != 9);
-			
 			
 			if(menu == 1) {
 				
@@ -72,7 +71,6 @@ public class tttoe {
 				
 			}
 			
-			
 			if(menu == 2) {
 				
 				int [][] casilla = new int [3][3]; // TABLERO
@@ -83,8 +81,6 @@ public class tttoe {
 				boolean fin = false;
 				
 				do {
-					
-					System.out.println("Contador: " + contador + "\n");
 					
 					if(contador % 2 == 1) { // TURNO JUGADOR ----------------------------------------------------------------------------------------------------------------------------------
 						
@@ -283,10 +279,5 @@ public class tttoe {
 		System.out.println("\nFIN DEL JUEGO ! ◝(ᵔᵕᵔ)◜");
 		
 		teclado.close();
-		
-		// FIRMADO POR DANIEL CEBAN 16/11/2022 14:34
-		// AQUEST EXERCICI M'HA AGRADAT MOLT, SOL HE POGUT FER LA IA QUE MAI ES DEIXA GUANYAR PERO SOL SI COMENCA ELLA PER FALTA DE TEMPS 
-		// AQUEST CAP DE SETMANA ACABARE LA IA PERQUE COMENCI DE FORMA RANDOM EL PRIMER I LA PUJARE AL GITHUB
-		// GITHUB (DE MOMENT EL TINC EN PRIVAT FINS QUE ACABI LA PART DE LA IA): https://github.com/aiuoki/tictactoe
 	}
 }
