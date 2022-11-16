@@ -1,4 +1,4 @@
-# tictactoe JAVA
+# tictactoe JAVA SIN FUNCIONES
 minimax.java: tic tac toe Jugador vs IA Imposible
 
 ia.java: tic tac toe Jugador vs IA Facil
