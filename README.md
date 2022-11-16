@@ -1,7 +1,7 @@
 # tictactoe JAVA
 
-ia.java: tic tac toe Jugador vs IA Facil
+ia tictactoe jugador vs IA (facil)
 
-menu.java: combinacion de ia vs jugador + jugador vs jugador con menu (en proceso)
+menu tictactoe 2 modos de juego
 
-tictactoe.java: tic tac toe 2 Jugadores (en proceso)
+tictactoe tictactoe 2 jugadores
