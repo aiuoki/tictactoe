@@ -1,4 +1,4 @@
-# tic tac toe java
+# tictactoe Java
 
 minimax.java: tic tac toe Jugador vs IA Imposible
 
