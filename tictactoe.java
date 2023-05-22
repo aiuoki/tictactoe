@@ -15,16 +15,6 @@ public class tictactoe {
 		System.out.println("◝(ᵔᵕᵔ)◜ ¡TIC TAC TOE! ◝(ᵔᵕᵔ)◜\n");
 		
 		do {
-			
-			System.out.print("\n\t---\t---\t---\n\t|1|\t|2|\t|3|\n\t---\t---\t---\n\n");
-			for(int i = 0; i < 3; i++) {
-				System.out.print("---\n|" + (i+1) + "|");
-				for(int j = 0; j < 3; j++) {
-					System.out.print("\t " + casilla[i][j]);
-				}
-				System.out.println("\n---\n");
-			}
-			
 			System.out.println("Turno del jugador " + ((contador % 2) + 1) + ".");
 			do {
 				do {
@@ -39,6 +29,15 @@ public class tictactoe {
 			}while(casilla[fila-1][columna-1] != 0);
 			
 			casilla[fila-1][columna-1] = ((contador % 2) + 1);
+			
+			System.out.print("\n\t---\t---\t---\n\t|1|\t|2|\t|3|\n\t---\t---\t---\n\n");
+			for(int i = 0; i < 3; i++) {
+				System.out.print("---\n|" + (i+1) + "|");
+				for(int j = 0; j < 3; j++) {
+					System.out.print("\t " + casilla[i][j]);
+				}
+				System.out.println("\n---\n");
+			}
 			
 			int jug = ((contador % 2)+1);
 			
